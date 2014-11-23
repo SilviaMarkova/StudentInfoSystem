@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="StudentInfoDatabase" Class="StudentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\StudentInfoDatabase.mdf;Integrated Security=True" SettingsObjectName="StudentInfoSystem.Properties.Settings" SettingsPropertyName="StudentInfoDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Students" Member="Students">
+    <Type Name="Student">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SecondName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Faculty" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Specialty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OKS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="StudentStatus" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FakNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Course" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Potok" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="[Group]" Member="Group" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
